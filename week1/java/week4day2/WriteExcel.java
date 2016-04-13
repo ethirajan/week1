@@ -5,7 +5,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.sql.Driver;
 
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
@@ -30,7 +29,6 @@ public class WriteExcel {
 		HSSFRow row = sheet.getRow(1);
 		HSSFCell cell = row.createCell(1);
 		cell.setCellValue("Test Case");
-		
 
 		// create 2nd row
 		sheet.getRow(2).createCell(1).setCellValue("Create Leadnm");
